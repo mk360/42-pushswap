@@ -1,0 +1,12 @@
+disorder.c: In function ‘main’:
+disorder.c:34:4: error: expected expression before ‘]’ token
+   34 |  a[] = {4, 67, 3, 87, 23};
+      |    ^
+disorder.c:35:27: warning: passing argument 1 of ‘calc_disorder’ makes pointer from integer without a cast [-Wint-conversion]
+   35 |  disorder = calc_disorder(a);
+      |                           ^
+      |                           |
+      |                           int
+disorder.c:3:26: note: expected ‘int *’ but argument is of type ‘int’
+    3 | float calc_disorder(int *a)
+      |                     ~~~~~^
